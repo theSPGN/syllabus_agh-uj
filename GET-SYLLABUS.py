@@ -9,10 +9,10 @@ ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
 
-def get_info(url):
+def get_info(url_syllabus):
     try:
-        print(">>> ", url)
-        uh = urllib.request.urlopen(url, context=ctx)
+        print(">>> ", url_syllabus)
+        uh = urllib.request.urlopen(url_syllabus, context=ctx)
         data = uh.read().decode()
         return BeautifulSoup(data, 'html.parser')
     except Exception as e:
@@ -63,10 +63,7 @@ def write_data(my_data):
     return s
 
 
-def main(do_want_to_print):
-    # strona agh:
-    u = "https://sylabusy.agh.edu.pl/pl/1/2/18/1/4"
-
+def main(do_want_to_print, u):
     # wybór wydziału:
     soup = get_info(u)
     departments = get_data(soup)
@@ -104,9 +101,43 @@ def main(do_want_to_print):
     print("Courses have been saved in:", name)
 
 
-x = input('Do you want me to print courses also in terminal? (choose)[Y/N]')
-if x == 'Y' or x == '1' or x == 'y':
-    want_print = True
-else:
-    want_print = False
-main(want_print)
+while True:
+    # strona agh:
+    url = "https://sylabusy.agh.edu.pl/pl/1/2/18/"
+    x = input('Do you want me to print courses also in terminal? (choose)[Y/N]')
+    if x == 'Y' or x == '1' or x == 'y':
+        want_print = True
+    else:
+        want_print = False
+    print("Wybierz rodzaj studiów:")
+    print("1. Stacjonarne")
+    print("2. Niestacjonarne")
+    if input() == '2':
+        url += '2'
+    else:
+        url += '1'
+    print("Wybierz formę studiów:")
+    print("1.inżynierskie")
+    print("2.licencjackie")
+    print("3.magisterskie inżynierskie")
+    print("4.magisterskie")
+    print("5.podyplomowe")
+    url += '/'
+    form = input()
+    if form == '5':
+        url = 'https://sylabusy.agh.edu.pl/pl/1/2/18/1/6'  # nie ma niestacjonarnych podyplomowych
+    elif form == '4':
+        url += '2'
+    elif form == '3':
+        url += '5'
+    elif form == '2':
+        url += '1'
+    else:
+        url += '4'
+
+    main(want_print, url)
+    response = input("Do you want to exit? [Y/N]")
+    if response == 'N' or response == '0' or response == 'n':
+        continue
+    else:
+        quit()

@@ -1,6 +1,7 @@
 import ssl
 import urllib.error
 import urllib.request
+from datetime import date
 
 from bs4 import BeautifulSoup
 
@@ -64,26 +65,38 @@ def write_data(my_data):
 
 
 def main(do_want_to_print, u):
-    # wybór wydziału:
+    # actual year
+    current_year = date.today().year - 2004
+    try:
+        u = u.replace('18', str(current_year))
+        urllib.request.urlopen(u)
+        print('working url', u)
+    except WindowsError:
+        try:
+            u = u.replace('18', str(current_year - 1))
+            urllib.request.urlopen(u)
+        except WindowsError:
+            pass
+    # department choice
     soup = get_info(u)
     departments = get_data(soup)
     depart = chose()
     u += '/' + depart
 
-    # wybór kierunku:
+    # field choice
     soup = get_info(u)
     majors = get_data(soup)
     major = chose()
     u += '/' + major
 
-    # kierunek -> pobranie danych (przedzmiotów):
+    # get information about courses
     soup = get_info(u)
     output = list()
     for i in range(7, 14):
         new_data = soup.find_all("div", {"id": "syl-grid-period-" + str(i)})
         output.append(write_data(new_data))
 
-    # Zapis do plku:
+    # Saving to the file
     try:
         name = majors[major] + '.txt'
     except KeyError:
@@ -93,7 +106,7 @@ def main(do_want_to_print, u):
     file.write('\n>>>' + majors[major] + ':')
     file.write('\n\n')
 
-    print(departments[depart] + '\n' + majors[major])  # nazwa kierunku
+    print(departments[depart] + '\n' + majors[major])  # field of science name printing
     for i in range(len(output)):
         if do_want_to_print is True:
             print(output[i])
@@ -102,7 +115,7 @@ def main(do_want_to_print, u):
 
 
 while True:
-    # strona agh:
+    # AGH-UST site
     url = "https://sylabusy.agh.edu.pl/pl/1/2/18/"
     x = input('Do you want me to print courses also in terminal? (choose)[Y/N]')
     if x == 'Y' or x == '1' or x == 'y':
@@ -125,7 +138,7 @@ while True:
     url += '/'
     form = input()
     if form == '5':
-        url = 'https://sylabusy.agh.edu.pl/pl/1/2/18/1/6'  # nie ma niestacjonarnych podyplomowych
+        url = 'https://sylabusy.agh.edu.pl/pl/1/2/18/1/6'  # there is no 'niestacjonarne' in 'podyplomowe'
     elif form == '4':
         url += '2'
     elif form == '3':

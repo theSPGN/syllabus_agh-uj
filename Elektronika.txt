@@ -1,0 +1,112 @@
+>>> WYDZIA£ INFORMATYKI, ELEKTRONIKI I TELEKOMUNIKACJI <<<
+>>> ELEKTRONIKA:
+
+
+>>>Semestr zimowy, 2022/2023:
+
+Probabilistyka i statystyka
+Podstawy informatyki
+Analiza matematyczna 1
+Algebra
+Wprowadzenie do  elektroniki
+Fizyka 1
+Wychowanie fizyczne 1
+
+>>>Semestr letni, 2022/2023:
+
+In¿ynierskie techniki obliczeniowe
+Cyfrowe uk³ady elektroniczne 1
+Wychowanie fizyczne 2
+Analiza obwodów 1
+Analiza matematyczna 2
+Miernictwo elektroniczne
+Jêzyki programowania
+Fizyka 2
+Jêzyki obce
+Jêzyk angielski B-2 – kurs obowi¹zkowy 135 godzin - semestr 1/3
+Jêzyk rosyjski B-2 – kurs obowi¹zkowy 135 godzin - semestr 1/3
+Jêzyk hiszpañski B-2 – kurs obowi¹zkowy 135 godzin - semestr 1/3
+Jêzyk niemiecki B-2 - kurs obowi¹zkowy 135 godzin - semestr 1/3
+Jêzyk francuski B-2 – kurs obowi¹zkowy 135 godzin - semestr 1/3
+
+>>>Semestr zimowy, 2023/2024:
+
+Programowanie obiektowe
+Wychowanie fizyczne 3
+Analiza obwodów 2
+Automatyka przemys³owa
+Elementy elektroniczne
+Cyfrowe uk³ady elektroniczne 2
+Teoria sygna³ów
+Metody numeryczne
+Jêzyki obce
+Jêzyk angielski B-2 – kurs obowi¹zkowy 135 godzin - semestr 2/3
+Jêzyk francuski B-2 – kurs obowi¹zkowy 135 godzin - semestr 2/3
+Jêzyk niemiecki B-2 - kurs obowi¹zkowy 135 godzin - semestr 2/3
+Jêzyk hiszpañski B-2 – kurs obowi¹zkowy 135 godzin - semestr 2/3
+Jêzyk rosyjski B-2 – kurs obowi¹zkowy 135 godzin - semestr 2/3
+Przedmiot ekonomiczny
+Podstawy ekonomii finansów i prawa w biznesie
+Podstawy zarz¹dzania
+
+>>>Semestr letni, 2023/2024:
+
+Systemy kontrolno-pomiarowe
+Analogowe uk³ady elektroniczne
+Symulacja uk³adów elektronicznych
+Wprowadzenie do techniki sensorowej
+Cyfrowe przetwarzanie sygna³ów
+Systemy mikroprocesorowe I
+Podstawy transmisji danych
+Jêzyki obce - kurs z egzaminem
+Jêzyk francuski B-2 – kurs obowi¹zkowy 135 godzin - semestr 3/3
+Jêzyk rosyjski B-2 – kurs obowi¹zkowy 135 godzin - semestr 3/3
+Jêzyk hiszpañski B-2 – kurs obowi¹zkowy 135 godzin - semestr 3/3
+Jêzyk angielski B-2 – kurs obowi¹zkowy 135 godzin - semestr 3/3
+Jêzyk niemiecki B-2 - kurs obowi¹zkowy 135 godzin - semestr 3/3
+Przedmiot humanistyczny
+Ochrona w³asnoœci intelektualnej
+Prawo patentowe
+
+>>>Semestr zimowy, 2024/2025:
+
+Projektowanie systemów cyfrowych
+Podstawy transmisji œwiat³owodowej
+Podstawy mikroelektroniki
+Systemy i uk³ady elektroniczne
+Design Laboratory
+Systemy mikroprocesorowe II
+IEL-1-s Blok obieralny sem 5
+Alternatywne Ÿród³a energii
+Monta¿ systemów elektronicznych
+Programowanie w jêzyku Python
+Podstawy mechaniki i rysunku technicznego E
+Narzêdzia CAD
+Podstawy konstrukcji mechanicznych
+
+>>>Semestr letni, 2024/2025:
+
+Projektowanie urz¹dzeñ elektronicznych
+Praktyka kierunkowa
+Projektowanie uk³adów scalonych
+Pracownia dyplomowa
+Sieci transmisji danych
+Technika mikrofalowa i antenowa
+IEL-1-s Blok obieralny sem 6
+Aplikacje mikrokontrolerów
+Elektronika w medycynie
+Problemy termiczne w uk³adach elektronicznych
+Systemy elektroniczne pojazdów
+Urz¹dzenia teleinformatyki
+
+>>>Semestr zimowy, 2025/2026:
+
+Seminarium dyplomowe
+Repetytorium dyplomowe
+Projekt dyplomowy
+IEL-1-s Blok obieralny sem 7
+Elektronika spinowa
+Projektowanie systemów cyfrowych  przy pomocy jêzyków wysokiego poziomu ESL
+Standardy komunikacji miêdzyuk³adowej w modu³owych systemach wbudowanych
+Techniki i systemy bezprzewodowe
+Analogowe bloki funkcjonalne i ich aplikacje

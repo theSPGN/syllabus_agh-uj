@@ -48,12 +48,21 @@ def chose():
     return input()
 
 
-def write_data(my_data):
+def write_data(my_data, number):
     s = ''
+    term_int = number - 7
     for element in my_data:
-        tag = element.find('p')
-        term = tag.get_text()
-        s += '\n' + '>>> ' + term + ':' + '\n'
+        term_int += 1
+        try:
+            tag = element.find('p')
+            term = tag.get_text()
+            if term.startswith("Semestr") is False:
+                raise AttributeError
+            term_add = '>>>' + term + ':'
+        except AttributeError:
+            term_add = '>>>' + "Semestr " + str(term_int) + ':'
+
+        s += '\n' + term_add + '\n' + '\n'
         subject = element.find_all('td')
         for e in subject:
             try:
@@ -65,18 +74,6 @@ def write_data(my_data):
 
 
 def main(do_want_to_print, u):
-    # actual year
-    current_year = date.today().year - 2004
-    try:
-        u = u.replace('18', str(current_year))
-        urllib.request.urlopen(u)
-        print('working url', u)
-    except WindowsError:
-        try:
-            u = u.replace('18', str(current_year - 1))
-            urllib.request.urlopen(u)
-        except WindowsError:
-            pass
     # department choice
     soup = get_info(u)
     departments = get_data(soup)
@@ -94,7 +91,7 @@ def main(do_want_to_print, u):
     output = list()
     for i in range(7, 14):
         new_data = soup.find_all("div", {"id": "syl-grid-period-" + str(i)})
-        output.append(write_data(new_data))
+        output.append(write_data(new_data, i))
 
     # Saving to the file
     try:
@@ -102,11 +99,13 @@ def main(do_want_to_print, u):
     except KeyError:
         name = "Syllabus.txt"
     file = open(name, 'w')
-    file.write('>>>' + departments[depart])
-    file.write('\n>>>' + majors[major] + ':')
+    faculty = departments[depart].upper()
+    field = majors[major].upper()
+    file.write('>>> ' + faculty + ' <<<')
+    file.write('\n>>> ' + field + ':')
     file.write('\n\n')
 
-    print(departments[depart] + '\n' + majors[major])  # field of science name printing
+    print(faculty + '\n' + field)  # field of science name printing
     for i in range(len(output)):
         if do_want_to_print is True:
             print(output[i])
@@ -114,39 +113,103 @@ def main(do_want_to_print, u):
     print("Courses have been saved in:", name)
 
 
-while True:
-    # AGH-UST site
-    url = "https://sylabusy.agh.edu.pl/pl/1/2/18/"
-    x = input('Do you want me to print courses also in terminal? (choose)[Y/N]')
-    if x == 'Y' or x == '1' or x == 'y':
-        want_print = True
-    else:
-        want_print = False
+def agh_link():
+    url_agh = "https://sylabusy.agh.edu.pl/pl/1/2/"
+    # actual year
+    current_year = date.today().year - 2004
+    try:
+        url_agh += str(current_year)
+        urllib.request.urlopen(url_agh)
+    except WindowsError:
+        try:
+            url_agh += str(current_year - 1)
+            urllib.request.urlopen(url_agh)
+        except WindowsError:
+            url_agh += '18'
+    url_agh += '/'
     print("Wybierz rodzaj studiów:")
     print("1. Stacjonarne")
     print("2. Niestacjonarne")
     if input() == '2':
-        url += '2'
+        url_agh += '2'
     else:
-        url += '1'
+        url_agh += '1'
     print("Wybierz formę studiów:")
     print("1.inżynierskie")
     print("2.licencjackie")
     print("3.magisterskie inżynierskie")
     print("4.magisterskie")
     print("5.podyplomowe")
-    url += '/'
+    url_agh += '/'
     form = input()
     if form == '5':
-        url = 'https://sylabusy.agh.edu.pl/pl/1/2/18/1/6'  # there is no 'niestacjonarne' in 'podyplomowe'
+        url_agh = 'https://sylabusy.agh.edu.pl/pl/1/2/18/1/6'  # there is no 'niestacjonarne' in 'podyplomowe'
     elif form == '4':
-        url += '2'
+        url_agh += '2'
     elif form == '3':
-        url += '5'
+        url_agh += '5'
     elif form == '2':
-        url += '1'
+        url_agh += '1'
     else:
-        url += '4'
+        url_agh += '4'
+
+    return url_agh
+
+
+def uj_link():
+    url_uj = 'https://sylabus.uj.edu.pl/pl/'
+    current_year = date.today().year - 2017
+    try:
+        url_uj += str(current_year)
+        urllib.request.urlopen(url_uj)
+    except WindowsError:
+        try:
+            url_uj += str(current_year - 1)
+            urllib.request.urlopen(url_uj)
+        except WindowsError:
+            url_uj += '5'
+    url_uj += '/'
+    print("Wybierz rodzaj studiów:")
+    print("1. Stacjonarne")
+    print("2. Niestacjonarne")
+    if input() == '2':
+        url_uj += '2'
+    else:
+        url_uj += '1'
+    print("Wybierz formę studiów:")
+    print("1.pierwszego stopnia")
+    print("2.pierwszego stopnia, wspólne")
+    print("3.drugiego stopnia")
+    print("4.jednolite magisterskie")
+    url_uj += '/'
+    term = input()
+    if term == '4':
+        url_uj += '7'
+    elif term == '3':
+        url_uj += '3'
+    elif term == '2':
+        url_uj += '8'
+    else:
+        url_uj += '2'
+
+    return url_uj
+
+
+while True:
+    x = input('Do you want me to print courses also in terminal? (choose)[Y/N]')
+    if x == 'Y' or x == '1' or x == 'y':
+        want_print = True
+    else:
+        want_print = False
+    # AGH/UJ
+    print("Do it for AGH/UJ (choose)[A/U]")
+    y = input()
+
+    if y == 'U' or y == 'u' or y == '2':
+        pass
+        url = uj_link()
+    else:
+        url = agh_link()
 
     main(want_print, url)
     response = input("Do you want to exit? [Y/N]")

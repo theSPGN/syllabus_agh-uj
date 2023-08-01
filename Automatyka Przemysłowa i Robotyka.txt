@@ -1,0 +1,131 @@
+>>> WYDZIA£ IN¯YNIERII MECHANICZNEJ I ROBOTYKI <<<
+>>> AUTOMATYKA PRZEMYS£OWA I ROBOTYKA:
+
+
+>>>Semestr zimowy, 2023/2024:
+
+Zapis konstrukcji 1
+Techniki wytwarzania
+Grupa modu³ów HS z zakresu nauk humanistycznych i spo³ecznych - Obieralny 1
+Modu³ H-S
+Wychowanie fizyczne 1
+Techniki informatyczne
+Fizyka 1
+Matematyka 1
+Chemia
+
+>>>Semestr letni, 2023/2024:
+
+Informatyka
+Mechanika 1
+Elektrotechnika i elektronika
+Grupa modu³ów jêzykowych: Jêzyk obcy na poziomie B2
+Jêzyk angielski B-2 – kurs obowi¹zkowy 135 godzin - semestr 1/3
+Jêzyk francuski B-2 – kurs obowi¹zkowy 135 godzin - semestr 1/3
+Jêzyk niemiecki B-2 - kurs obowi¹zkowy 135 godzin - semestr 1/3
+Jêzyk rosyjski B-2 – kurs obowi¹zkowy 135 godzin - semestr 1/3
+Jêzyk hiszpañski B-2 – kurs obowi¹zkowy 135 godzin - semestr 1/3
+Podstawy nauki o materia³ach
+Wychowanie fizyczne 2
+Zapis konstrukcji 2
+Matematyka 2
+Fizyka 2
+
+>>>Semestr zimowy, 2024/2025:
+
+Grupa modu³ów specjalnoœciowych - Programowanie obiektowe - Obieralny 4
+Programowanie obiektowe w jêzyku C#
+Programowanie obiektowe w jêzyku Java
+Modelowanie numeryczne uk³adów automatyki w œrodowisku LabVIEW
+Grupa modu³ów specjalnoœciowych - Mechanizmy w automatyce i robotyce - Obieralny 3
+Podstawy modelowania i syntezy mechanizmów
+Teoria mechanizmów i maszyn
+Maszyny i urz¹dzenia przeróbki metali
+Mechanika 2
+Metody numeryczne
+Podstawy automatyki
+Grupa modu³ów jêzykowych: Jêzyk obcy na poziomie B2
+Jêzyk angielski B-2 – kurs obowi¹zkowy 135 godzin - semestr 2/3
+Jêzyk francuski B-2 – kurs obowi¹zkowy 135 godzin - semestr 2/3
+Jêzyk hiszpañski B-2 – kurs obowi¹zkowy 135 godzin - semestr 2/3
+Jêzyk niemiecki B-2 - kurs obowi¹zkowy 135 godzin - semestr 2/3
+Jêzyk rosyjski B-2 – kurs obowi¹zkowy 135 godzin - semestr 2/3
+Wychowanie fizyczne 3
+Wytrzyma³oœæ materia³ów
+
+>>>Semestr letni, 2024/2025:
+
+Grupa modu³ów specjalnoœciowych - Termodynamika i mechanika p³ynów - Obieralny 7
+Termodynamika
+Mechanika p³ynów - modelowanie
+Wymiana ciep³a - modelowanie
+Grupa modu³ów jêzykowych: Jêzyk obcy na poziomie B2 z egzaminem
+Jêzyk hiszpañski B-2 – kurs obowi¹zkowy 135 godzin - semestr 3/3
+Jêzyk francuski B-2 – kurs obowi¹zkowy 135 godzin - semestr 3/3
+Jêzyk niemiecki B-2 - kurs obowi¹zkowy 135 godzin - semestr 3/3
+Jêzyk angielski B-2 – kurs obowi¹zkowy 135 godzin - semestr 3/3
+Jêzyk rosyjski B-2 – kurs obowi¹zkowy 135 godzin - semestr 3/3
+Sterowanie ci¹g³e
+Napêdy i sterowanie hydrauliczne i pneumatyczne
+Podstawy konstrukcji maszyn
+Grupa modu³ów specjalnoœciowych - Elementy automatyki i wspomaganie projektowania - Obieralny 6
+Elementy automatyki przemys³owej
+Wspomaganie projektowania uk³adów automatyki
+Metrologia i techniki pomiarowe
+
+>>>Semestr zimowy, 2025/2026:
+
+Grupa modu³ów specjalnoœciowych - Wspomaganie projektowania i prac in¿ynierskich - Obieralny 9
+Komputerowe wspomaganie prac in¿ynierskich
+Projektowanie instalacji automatyki przemys³owej - EPLAN
+Komputerowe wspomaganie projektowania
+Komputerowe wspomaganie projektowania konstrukcji
+Grupa modu³ów specjalnoœciowych - Techniki informacyjne - Obieralny 8
+Jêzyki programowania sterowników przemys³owych
+Zaawansowane programowanie obiektowe
+Automatyzacja systemów i urz¹dzeñ transportowych
+Sterowanie dyskretne
+Hydrauliczne i pneumatyczne uk³ady automatyki
+Analiza sygna³ów i identyfikacja
+Technika mikroprocesorowa
+Podstawy robotyki
+
+>>>Semestr letni, 2025/2026:
+
+Grupa modu³ów specjalnoœciowych - Praca przejœciowa - Obieralny 12
+Praca przejœciowa w zakresie automatyki
+Praca przejœciowa w zakresie robotyki
+Grupa modu³ów specjalnoœciowych - Automatyzacja i modelowanie procesów - Obieralny 10
+Automatyzacja procesów produkcyjnych
+Modelowanie procesów produkcyjnych
+Grupa modu³ów specjalistycznych - In¿ynieria oprogramowania i systemów informatycznych - Obieralny 11
+Projektowanie systemów informatycznych
+In¿ynieria oprogramowania
+Napêdy elektryczne
+Grupa modu³ów - Praktyki studenckie
+Praktyka zawodowa
+Roboty przemys³owe
+Systemy czasu rzeczywistego
+Przemys³owe systemy sterowania
+
+>>>Semestr zimowy, 2030/2031:
+
+Grupa modu³ów specjalistycznych - Cz³owiek w œrodowisku technicznym - Obieralny 13
+Ergonomia
+Twórczoœæ w technice
+Prawo w technice
+Grupa modu³ów specjalistycznych - Praca dyplomowa in¿ynierska - Obieralny 18
+Projekt dyplomowy w zakresie automatyki
+Projekt dyplomowy w zakresie robotyki
+Grupa modu³ów specjalistycznych - Seminarium dyplomowe - Obieralny 17
+Seminarium dyplomowe w zakresie robotyki
+Seminarium dyplomowe w zakresie automatyki
+Grupa modu³ów specjalnoœciowych - Techniki informacyjne - Obieralny 15
+Sieci komputerowe i bazy danych
+Techniki informacyjne w praktyce in¿ynierskiej
+Grupa modu³ów specjalistycznych - Systemy i projektowanie machatroniczne (ang.) - Obieralny 16
+Signals and Systems
+Mechatronic design
+Grupa modu³ów specjalistycznych - Eksploatacja i systemy odnawialne w automatyce i robotyce - Obieralny 14
+Eksploatacja uk³adów automatyki i robotyki
+Odnawialne systemy techniczne w automatyce i robotyce
